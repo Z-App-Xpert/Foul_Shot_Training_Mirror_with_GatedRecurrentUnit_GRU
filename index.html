@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foul Shot Training Mirror</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d@0.2/landmark_grid.css" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.5/control_utils.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="demo.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d@0.2/control_utils_3d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.5/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.4.1627343400/pose.js" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.4.1624666670/pose.js" crossorigin="anonymous"></script>
+    <!-- Import TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.8.0/dist/tf.min.js"></script>
+    <!-- Import tfjs-vis -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+     <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+     partial:index.partial.html 
+
+    <body>
+        <style>
+            .square-box {
+                width: 33%;
+                height: 0;
+                padding-top: 33%;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            
+            .landmark-grid-container {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #99999999;
+            }
+        </style>
+        <div class="container">
+            <video class="input_video"></video>
+            <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+            <div class="loading">
+                <div class="spinner"></div>
+                <div class="message">
+                    Loading
+                </div>
+            </div>
+            <a class="abs logo" href="http://www.mediapipe.dev" target="_blank">
+                <div style="display: flex;align-items: center;bottom: 0;right: 10px;">
+                    <img class="logo" src="logo_white.png" alt="" style="height: 50px;">
+                    <span class="title">MediaPipe</span>
+                </div>
+            </a>
+            <div class="tblData">
+                <div>
+                    <p>Motion Prediction: <span id="actionPrediction"></span></p>
+                    <p>Feet Visibility: <span id="visibility"></span></p>
+                    <p>Shoulder X pos: <span id="x"></span></p>
+                    <p>ToeY pos: <span id="y"></span></p>
+                    <p>Angle desc: <span id="part"></span></p>
+                    <p>Angle: <span id="angle"></span></p>
+                    <p>Angle desc: <span id="2ndpart"></span></p>
+                    <p>Angle: <span id="shangle"></span></p>
+                    <p>Angle desc: <span id="3rdpart"></span></p>
+                    <p>Angle: <span id="catangle"></span></p>
+                    <p>Time: <span id="time"></span></p>
+                </div>
+            </div>
+        <div class="tblOutputWrapper">
+            <table class="table table-striped">
+                <tr class="bg-info">
+                    <th>Feet Visibility</th>
+                    <th>Shldr X</th>
+                    <th>rtToe Y</th>
+                    <th>Right SEW</th>
+                    <th>Right WSR</th>
+                    <th>Right HKA</th>
+                    <th>Time</th>
+                    <th>Prediction</th>
+                </tr>
+                <tbody id="recordTable">
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="control-panel">
+        </div>
+        <div class='square-box'>
+            <div class="landmark-grid-container">
+            </div>
+        </div>
+        <script src="script_tf.js"></script>
+    </body>
+
+</html>
