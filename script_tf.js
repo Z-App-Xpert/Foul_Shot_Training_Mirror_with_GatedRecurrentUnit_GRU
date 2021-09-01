@@ -46,7 +46,7 @@ var model_path ;
 const model_type = 'gru';
 
 // switch cases for selecting the model path based on the type
-// rnn , lstm , gru , bilstm
+// rnn , lstm , gru
 switch (model_type) {
     case 'gru' :
         model_path = './models/gru/model.json'; 
@@ -56,12 +56,6 @@ switch (model_type) {
         break;
     case 'lstm' :
         model_path = './models/simple_lstm/model.json';
-        break;
-   case 'bilstm' :
-        model_path = './models/bilstm/model.json';
-        break;
-    case 'conv1d_3_lstm' :
-        model_path = './models/advance_lstm/model.json';
         break;
     default:
         model_path = './models/gru/model.json';
