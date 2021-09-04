@@ -11,7 +11,7 @@
                  &emsp;&emsp;&emsp; 2.  script_tf.js  
                  &emsp;&emsp;&emsp; 3.  style.css
                  
- # The Foul Shot Training Mirror
+ # The Foul Shot Training Mirror with GRU
   ![Training Mirror](https://github.com/Z-App-Xpert/PersonalFoulShotTrainingMirror_With_DNNsAndMachineLearning/blob/main/Images/FoulShotTrainingMirror_ImageTwo.png?raw=true)
 
  
