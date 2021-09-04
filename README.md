@@ -4,6 +4,8 @@
     [GRU Model of the Foul Shot Training Mirror](https://foul-shot-training-mirror-with-gated-recurrent-unit-gru.netlify.app).  Right click to open site in a new window or new tab.
     - If the site does not load after 30 seconds, then refresh the browser.
         - If you get a message to allow the site to use the camera, then Click OK.
+    - Turn Selfie Mode on.  
+    - Foul Shot Training Mirror is trained on a person shooting with their right-hand.
 - The Foul Shot Training Mirror is designed to best work with a modern day laptop, and to run on the local browser so no internet connection is needed.
     - To run from your local browser.
           - Download the three files below and launch the index.html file with your local browser.  You are now experiencing Live Perception as defined by Google.  
