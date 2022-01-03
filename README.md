@@ -1,5 +1,6 @@
 # Foul_Shot_Training_Mirror_with_GatedRecurrentUnit_GRU
-- This repository is support for 
+- This repository is support for my Master's Thesis entitled [Live Perception and Real Time Motion Prediction with Deep Neural Networks
+and Machine Learning](https://dash.harvard.edu/handle/1/37370061). Submitted on 11/01/2021 and published on 11/08/2021.
 - This repository's content holds the Deep Learning Models for predicting the series, {Dribbling, Pre-Set, Set, Confidence}, for iteration three during the development of the Foul Shot Training Mirror. This approach is part of 'The Universal Workflow of Machine Learning' and the purpose is to see if these Deep Learning models outperform the commonsense baseline designed in iteration two.  
 - View The Foul Shot Training Mirror  
     [GRU Model of the Foul Shot Training Mirror](https://foul-shot-training-mirror-with-gated-recurrent-unit-gru.netlify.app).  Right click to open site in a new window or new tab.
